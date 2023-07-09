@@ -1,0 +1,39 @@
+h1 {
+    color: navy;
+    text-align: center;
+    font-weight: 400;
+    /* No todas las font tienen para variar font-weight */
+    text-decoration: underline overline dashed;
+    font-size: 50px;
+    font-family: fantasy;
+}
+
+h2 {
+    color: magenta;
+    text-decoration: underline solid green;
+}
+
+h3 {
+    color: cornflowerblue;
+}
+
+#miembros {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+}
+
+button {
+    color: coral;
+    background-color: black;
+}
+
+p {
+    text-align: justify;
+    line-height: 1.5;
+    font-family: monospace;
+}
+
+a {
+    text-decoration: none;
+    color: darkorange;
+}

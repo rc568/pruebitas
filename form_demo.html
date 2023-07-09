@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="clase1.css">
+</head>
+
+<body>
+    <h1>Formulario Demo</h1>
+    <button>No relacionado al form</button>
+    <hr>
+    <form action="/tacos/">
+        <p>
+            <!-- Placeholder: texto que saldra en la casilla antes de ingresar algo -->
+            <label for="username">Ingrese su usuario:</label>
+            <input type="text" placeholder="username" id="username" name="Username">
+        </p>
+        <button>Relacionado al form</button>
+        <p>
+            <label for="password">Ingrese su contraseña:</label>
+            <input type="password" placeholder="password" id="password" name="pass">
+        </p>
+        <button type="button">No relacion al form</button>
+        <p>
+            <label for="color">Seleccione un color:</label>
+            <input type="color" id="color" name="color">
+        </p>
+        <p>
+            <!-- Forma Alternativa de colocar un label + input -->
+            <label>
+                Selecciona mes y año:
+                <input type="month">
+            </label>
+        </p>
+        <p>
+            <!-- Number tiene atributos como min, max, step-->
+            <label>
+                Ingrese un número:
+                <input type="number" placeholder="ingrese un número" name="num">
+            </label>
+        </p>
+        <button>Enviar</button>
+        <input type="submit" value="Forma opcional de hacer un botón">
+    </form>
+
+    <h2>Llevando datos a un buscador</h2>
+
+    <p>
+    <form action="https://www.reddit.com./search">
+        <input type="text" name="q">
+        <button>Buscar en Reddit</button>
+    </form>
+    </p>
+
+    <p>
+    <form action="https://www.youtube.com./results">
+        <input type="text" name="search_query">
+        <button>Buscar en YouTube</button>
+    </form>
+    </p>
+
+    <p>
+    <form action="https://www.google.com./search">
+        <input type="text" name="q">
+        <button>Buscar en Google</button>
+    </form>
+    </p>
+    <hr>
+    <h2>Otros input</h2>
+
+    <form action="/datos">
+        <input type="checkbox" name="agree_tos" id="agree" checked>
+        <label for="agree">Estoy de acuerdo con las condiciones.</label>
+
+        <p>
+            Select a Race:
+            <br>
+            <label for="S">Talla S:</label>
+            <input type="radio" name="size" id="S" value="s">
+            <br>
+            <label for="M">Talla M:</label>
+            <input type="radio" name="size" id="M" value="m">
+            <br>
+            <label for="L">Talla L:</label>
+            <input type="radio" name="size" id="L" value="l">
+            <br>
+            <label for="comida">Seleccione una entrada:</label>
+            <select name="comida" id="comida">
+                <option value="tallarin">Tallarines Rojos</option>
+                <option value="Papa_rellena">Papa Rellena</option>
+                <option value="Bisteck">Bisteck</option>
+            </select>
+        </p>
+
+        <!-- Range: Es un desplazador para controlar cantidad. value es el valor inicial -->
+        <p>
+            <label for="mayonesa">¿Cuánta mayonesa desea?</label>
+            <input type="range" name="mayonesa" id="mayonesa" min="1" max="5" step="1" value="4">
+        </p>
+
+        <p>
+            <!-- rows: alto y cols: ancho -->
+            <label for="poema">Escriba un poema:</label>
+            <br>
+            <textarea name="poem" id="poema" cols="60" rows="3" placeholder="Escriba aquí ..."></textarea>
+        </p>
+
+        <button>Enviar</button>
+    </form>
+
+    <h3>Ejercicio Udemy</h3>
+    <form action="/udemy">
+        <label for="User">Username</label>
+        <input type="text" name="username" id="User" placeholder="username">
+        <br>
+        <label for="pass1">Password</label>
+        <input type="password" name="pass1" id="pass1" placeholder="password">
+        <br>
+        <button>Register</button>
+    </form>
+
+</body>
+
+</html>
